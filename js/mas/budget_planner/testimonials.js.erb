@@ -1,0 +1,26 @@
+$(document).ready(function(){
+
+    var fact = $(".quote");
+    var i = 0;
+    var facts = {
+      'en': <%= I18n.t('budget-planner.testimonials', locale: :en).to_json %>,
+      'cy': <%= I18n.t('budget-planner.testimonials', locale: :cy).to_json %>
+    };
+
+    $(function() {
+
+    function newPhrase() {
+      fact.html(facts[locale][i]);
+      i++;
+      if ( i == facts[locale].length ) i = 0;
+    }
+
+    function switchPhrase() {
+      fact.fadeOut( 500, "swing", function(){
+        fact.html(newPhrase());
+      }).fadeIn(500, "swing");
+    }
+    setInterval(switchPhrase, 8000);
+    });
+
+});
