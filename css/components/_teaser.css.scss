@@ -1,0 +1,117 @@
+.teaser {
+  width: 95%;
+  padding: 3% 3% 0px 3%;
+  background-color: $color-white;
+  border-radius: 10px;
+  box-shadow: 0 4px #e3e4e6;
+  text-align: center;
+  position: relative;
+  z-index: 50;
+  padding-bottom: 25px;
+
+  .teaser__heading {
+    @extend %heading-small;
+    font-weight: bold;
+  }
+}
+
+.teaser--narrow {
+  margin: 100px auto 60px auto;
+  min-height: 240px;
+
+  &:nth-of-type(1) {
+    margin-top: 20px;
+  }
+
+  @include respond-to($mq-m) {
+    margin: 0 1.5% 60px 1.5%;
+    width:47%;
+    float:left;
+    min-height: 340px;
+    float:left;
+  }
+}
+
+.teaser__button-container {
+  position: absolute;
+  bottom: -25px;
+  width: 100%;
+  left: 0;
+  text-align: center;
+}
+
+.teaser--wide {
+  margin: 80px auto 30px auto;
+  padding: 30px;
+  @extend %clearfix;
+
+  img, .pdl-icon {
+    margin-top: -86px;
+  }
+
+  h3, h4, p {
+    text-align: left;
+  }
+
+  h3:first-of-type {
+    margin-top: 0.5em
+  }
+
+  blockquote {
+    @extend %text-medium;
+    margin: 0;
+    padding: 0;
+    font-style: italic;
+    text-align: left;
+  }
+}
+
+/// for green version
+.teasers--green {
+  margin-top: -45px;
+  @include respond-to($mq-m) {
+    margin-top: -25px;
+  }
+  .teaser--narrow {
+    .teaser__heading {
+      margin:0;
+    }
+    img {
+      margin-top: -66px;
+    }
+
+    @include respond-to($mq-m) {
+      margin-bottom: 20px;
+      margin-top: -5px;
+    }
+  }
+}
+
+/// for gray version
+.teasers--gray {
+  background-color:$color-white;
+  padding-bottom:20px;
+  .teaser {
+    box-shadow: 0 4px $color-white;
+  }
+
+  .teaser--narrow {
+    margin-top:0;
+    &:nth-of-type(1) {
+      margin-bottom: 25px;
+    }
+    min-height: 200px;
+    .locale-cy & {
+      min-height: 220px;
+    }
+    img {
+      margin-top:-100px;
+    }
+    @include respond-to($mq-m) {
+      min-height: 280px;
+      .locale-cy & {
+        min-height: 300px;
+      }
+    }
+  }
+}

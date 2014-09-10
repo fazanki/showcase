@@ -1,0 +1,14 @@
+@mixin links($link-color: $color-link-default, $link-color-visited: $color-link-visited) {
+  color: $link-color;
+  text-decoration: none;
+
+  &:visited {
+    color: $link-color-visited;
+  }
+
+  &:hover,
+  &:focus {
+    color: $link-color;
+    text-decoration: underline;
+  }
+}

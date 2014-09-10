@@ -1,0 +1,44 @@
+.quote {
+  margin: 60px auto 60px auto;
+  width: 60%;
+  @extend %text-medium;
+  strong {
+    display: block;
+    margin-bottom: 20px;
+  }
+  p {
+    @extend %text-medium;
+    color: $color-green-tertiary
+  }
+
+  .divider {
+    margin: 0 auto 1.5em auto;
+    background: #bcc1bf;
+    height: 4px;
+    width: 50px;
+  }
+}
+
+.quote__read-more {
+  display:none;
+}
+
+.quote__read-more {
+  .js & {
+    display:inline-block;
+  }
+}
+
+
+
+
+.quote--no-margin-collapse {
+  padding-top: 1px;
+}
+
+.quote--white-bg {
+  background:$color-white;
+  width:auto;
+  padding:20px 20% 50px 20%;
+  margin:50px 0 0 0;
+}

@@ -1,0 +1,106 @@
+.pdl-footer {
+  position:absolute;
+  bottom: 0;
+  background: #2e3030;
+  width:100%;
+  @extend %clearfix;
+  padding: 15px 0 20px;
+  text-align:center;
+  @include respond-to($mq-m) {
+    padding-top: 30px;
+  }
+
+  .l-constrained {
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+  }
+}
+
+.pdl-footer__copy {
+  color:$color-white;
+  @extend %text-small;
+  @include respond-to($mq-m) {
+    float:left;
+    margin: 0
+  }
+}
+
+.pdl-footer__links {
+  @extend %clearfix;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  li {
+    float:left;
+    margin:0;
+    padding-left: 10px;
+    list-style: none;
+    white-space: nowrap;
+    @extend %text-small;
+  }
+  li:nth-of-type(1) {
+    padding-left: 0;
+  }
+  li:nth-last-child(n+2) {
+    &:after {
+      content: "|";
+      color:$color-white;
+      margin-left: 10px;
+    }
+  }
+  a {
+    color:$color-white;
+  }
+  @include respond-to($mq-m) {
+    float:right;
+  }
+}
+
+$pdl-footer-button-color-text: $color-white;
+$pdl-footer-button-border-width-button: 2px;
+$pdl-footer-button-border-radius: $border-radius-button;
+$pdl-footer-button-hover-lighten-percentage: $lighten-button;
+$pdl-footer-button-padding-horizontal: 5px;
+$pdl-footer-button-padding-vertical: 5px;
+
+@mixin pdl-footer-button($color-button, $color-border) {
+  @include button(
+    $pdl-footer-button-color-text,
+    $color-button,
+    $color-border,
+    $pdl-footer-button-border-width-button,
+    $pdl-footer-button-border-radius,
+    $pdl-footer-button-hover-lighten-percentage,
+    $pdl-footer-button-padding-horizontal,
+    $pdl-footer-button-padding-vertical
+  );
+
+  @extend %text-small;
+}
+
+
+.pdl-footer__start_again {
+  $start-again-color-button: #206eae;
+  $start-again-color-border: #14436a;
+  @include pdl-footer-button($start-again-color-button, $start-again-color-border);
+
+  margin-right: 10px;
+}
+
+.pdl-footer__feedback {
+  $feedback-color-button: #faa600;
+  $feedback-color-border: #d48d00;
+  @include pdl-footer-button($feedback-color-button, $feedback-color-border);
+}
+
+.pdl-footer__button-container {
+  display: inline-block;
+  white-space: nowrap;
+  margin-top: -$pdl-footer-button-padding-vertical;
+
+  @include respond-to($mq-m) {
+    margin-left: 3%;
+    float: right;
+  }
+}

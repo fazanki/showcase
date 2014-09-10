@@ -1,0 +1,16 @@
+.ie-warning {
+  background: #2e302f; //non standard!
+  padding: 10px;
+  color: $color-off-white;
+  font-size: 0.8em;
+  text-align: center;
+
+  img {
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+
+  a {
+    color: $color-yellow-light;
+  }
+}

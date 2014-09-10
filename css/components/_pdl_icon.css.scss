@@ -1,0 +1,60 @@
+.pdl-icon {
+  display:block;
+  width:57px;
+  height:80px;
+  margin:0 auto;
+}
+
+.pdl-icon-small {
+  padding:2px 0px 2px 25px;
+
+}
+
+.pdl-icon-small--pointer {
+  @include sprite(0, 20, 'payday_loans_intervention/sprite.png');
+}
+
+.pdl-icon-small--phone {
+  @include sprite(0, 21, 'payday_loans_intervention/sprite.png');
+}
+
+
+.pdl-icon--bills {
+  @include sprite(0, 0, 'payday_loans_intervention/sprite.png');
+}
+
+.pdl-icon--essentials {
+  @include sprite(0, 2, 'payday_loans_intervention/sprite.png');
+}
+
+.pdl-icon--loans {
+  @include sprite(0, 4, 'payday_loans_intervention/sprite.png');
+}
+
+.pdl-icon--payday {
+  @include sprite(0, 6, 'payday_loans_intervention/sprite.png');
+}
+
+.pdl-icon--clothes {
+  @include sprite(0, 8, 'payday_loans_intervention/sprite.png');
+}
+
+.pdl-icon--rent {
+  @include sprite(0, 10, 'payday_loans_intervention/sprite.png');
+}
+
+.pdl-icon--car {
+  @include sprite(0, 12, 'payday_loans_intervention/sprite.png');
+}
+
+.pdl-icon--holidays {
+  @include sprite(0, 14, 'payday_loans_intervention/sprite.png');
+}
+
+.pdl-icon--going-out {
+  @include sprite(0, 16, 'payday_loans_intervention/sprite.png');
+}
+
+.checked .pdl-icon {
+  @include sprite(0, 18, 'payday_loans_intervention/sprite.png');
+}

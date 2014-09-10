@@ -1,0 +1,22 @@
+.question {
+  margin:20px auto;
+  p {
+    @extend %heading-medium;
+    color: $color-black;
+    margin-top: 0.8em;
+  }
+  img {
+    margin-top: 5px;
+    width: 120px;
+  }
+  @include respond-to($mq-m) {
+    margin:50px auto;
+    img {
+      margin-top: 0;
+      width: auto;
+    }
+    p {
+      margin-top: 2.125rem;
+    }
+  }
+}

@@ -1,0 +1,59 @@
+@mixin button(
+    $color-text,
+    $color-button,
+    $color-border,
+    $border-width,
+    $border-radius,
+    $hover-lighten-percentage,
+    $padding-horizontal,
+    $padding-vertical
+  ) {
+
+  @extend %type-button;
+  @include inline-block;
+  padding: $padding-vertical $padding-horizontal;
+  margin-bottom: 0;
+  line-height: inherit;
+  text-align: center;
+  white-space: nowrap;
+  border-radius: $border-radius;
+  border: none;
+  background: $color-button;
+  border-bottom: $border-width solid $color-border;
+  color: $color-text;
+  transition: background 0.2s ease;
+  font-weight:bold;
+
+  &:visited, &:hover, &:focus {
+    color: $color-text;
+  }
+
+  &:focus {
+    outline: thin dotted;
+    outline: 3px auto -webkit-focus-ring-color;
+    outline-offset: -1px;
+  }
+
+  &:focus,
+  &:hover {
+    background: lighten($color-button, $hover-lighten-percentage);
+    border-color: lighten($color-border, $hover-lighten-percentage);
+    text-decoration: none;
+  }
+
+  &:active {
+    padding-top: $padding-vertical - $border-width;
+    border-bottom-color: $color-button;
+    border-top: $border-width solid $color-border;
+  }
+
+  &.is-disabled,
+  &[disabled] {
+    pointer-events: none;
+    cursor: not-allowed;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    filter: alpha(opacity=6);
+    opacity: .6;
+  }
+}

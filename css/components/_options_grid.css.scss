@@ -1,0 +1,31 @@
+.options-grid {
+  margin-top:40px;
+  .button {
+    margin: 60px auto 0 auto;
+    display: inline-block;
+    float: none;
+  }
+}
+
+.options-grid__list {
+  list-style: none;
+  margin:0;
+  padding:0;
+  @extend %clearfix;
+}
+
+.options-grid__item {
+  @include column(6);
+  min-height:205px;
+  a {
+    @extend %text-medium;
+    display: block;
+    padding: 0 10px;
+    &.checked{
+      color:$color-green-primary;
+    }
+  }
+  @include respond-to($mq-s) {
+    @include column(4);
+  }
+}

@@ -1,0 +1,53 @@
+// Buttons
+//
+// :hover      - green
+// :focus      - green
+// :active     - green
+// :visited     - green
+// .is-disabled - green
+// .button--primary            - yellow
+// .button--primary:hover      - yellow
+// .button--primary:focus      - yellow
+// .button--primary:active     - yellow
+// .button--primary:visited    - yellow
+// .button--primary.is-disabled - yellow
+//
+// Styleguide buttons
+
+// Default Button
+.button {
+  @include button(
+    $color-black,
+    $color-button-default,
+    $color-button-default-border,
+    $border-width-button,
+    $border-radius-button,
+    $lighten-button,
+    $padding-horizontal-button,
+    $padding-vertical-button
+  )
+}
+
+// Primary Button
+.button--primary {
+  background: $color-button-primary;
+  border-bottom-color: $color-button-primary-border;
+}
+
+.button--primary:focus,
+.button--primary:hover {
+  background: lighten($color-button-primary, $lighten-button);
+  border-color: lighten($color-button-primary-border, $lighten-button);
+}
+
+.button--primary:active {
+  border-bottom-color: $color-button-primary;
+  border-top-color: $color-button-primary-border;
+}
+
+// Class to remove default styling from a button for use as a trigger for collapsible sections - Unstyled Button
+.button--unstyled {
+  background: transparent;
+  border: none;
+  padding: 0;
+}

@@ -1,0 +1,38 @@
+.to-do-bar {
+  background:$color-white;
+  padding:7px 1.5% 10px 1.5%;
+  position:relative;
+  text-align:center;
+
+  p {
+    @extend %heading-small;
+    margin-top: 1rem;
+    color:$color-black;
+  }
+
+  strong {
+    color:$color-green-secondary;
+  }
+
+  &:before {
+    content: "";
+    position:absolute;
+    width:30px;
+    height:30px;
+    left:50%;
+    bottom:-13px;
+    margin-left:-15px;
+    background:$color-white;
+    transform:rotate(45deg);
+    box-shadow: 2px 2px 2px #e4e4e4;
+  }
+  box-shadow: 2px 2px 3px #e4e4e4;
+}
+
+/// ie
+.no-csstransforms .to-do-bar {
+  &:before {
+    display:none;
+  }
+}
+

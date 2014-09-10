@@ -1,0 +1,71 @@
+@import 'payday_loans_intervention/lib';
+
+@import 'payday_loans_intervention/utilities/clearfix';
+@import 'payday_loans_intervention/utilities/visually_hidden';
+@import 'payday_loans_intervention/utilities/inline_block';
+
+@import 'payday_loans_intervention/layout/common';
+
+// components
+@import 'payday_loans_intervention/components/advices';
+@import 'payday_loans_intervention/components/answer';
+@import 'payday_loans_intervention/components/button';
+@import 'payday_loans_intervention/components/divider';
+@import 'payday_loans_intervention/components/icon_phone';
+@import 'payday_loans_intervention/components/pdl_footer';
+@import 'payday_loans_intervention/components/pdl_header';
+@import 'payday_loans_intervention/components/to_do_bar';
+@import 'payday_loans_intervention/components/question';
+@import 'payday_loans_intervention/components/options_grid';
+@import 'payday_loans_intervention/components/pdl_icon';
+@import 'payday_loans_intervention/components/teaser';
+@import 'payday_loans_intervention/components/callout';
+@import 'payday_loans_intervention/components/sub_header';
+@import 'payday_loans_intervention/components/quote';
+@import 'payday_loans_intervention/components/error_message';
+
+// override crazy button styles from front end @inline-block mixin
+.button {
+  float: none;
+  display: inline-block;
+}
+
+// to move to more sensible place
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+  background:$color-grey-paler;
+}
+
+main {
+  text-align:center;
+  padding-bottom:130px;
+
+  @include respond-to($mq-m) {
+    padding-bottom: 78px;
+  }
+}
+
+.wrapper {
+  min-height:100%;
+  position:relative;
+}
+
+// Temporary hack around rails I18n weird behaviour
+.translation_missing {
+  background: #ff0000;
+  border: 10px solid #000;
+  padding: 10px;
+}
+
+fieldset {
+  border:none;
+  padding:0;
+  margin:0;
+}

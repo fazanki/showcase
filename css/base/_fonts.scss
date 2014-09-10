@@ -1,0 +1,87 @@
+//= depend_on_asset payday_loans_intervention/museosans_300-webfont.woff
+//= depend_on_asset payday_loans_intervention/museo_slab_300-webfont.woff
+//= depend_on_asset payday_loans_intervention/museosans_500-webfont.woff
+//= depend_on_asset payday_loans_intervention/museosans_700-webfont.woff
+//= depend_on_asset payday_loans_intervention/icon-font.woff
+//= depend_on_asset payday_loans_intervention/museosans_300-webfont.eot
+//= depend_on_asset payday_loans_intervention/museosans_500-webfont.eot
+//= depend_on_asset payday_loans_intervention/museosans_700-webfont.eot
+//= depend_on_asset payday_loans_intervention/icon-font.eot
+
+@if $responsive == true {
+  @font-face {
+    font-family: 'museo_slab';
+    src: asset-data-url('payday_loans_intervention/museo_slab_300-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'museo_slab';
+    src: asset-data-url('payday_loans_intervention/museo_slab_700-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'museo_sans';
+    src: asset-data-url('payday_loans_intervention/museosans_300-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'museo_sans';
+    src: asset-data-url('payday_loans_intervention/museosans_500-webfont.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'museo_sans';
+    src: asset-data-url('payday_loans_intervention/museosans_700-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'icon-font';
+    src: asset-data-url('payday_loans_intervention/icon-font.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+} @else {
+
+  @font-face {
+    font-family: 'museo_sans';
+    src: url(font-path('payday_loans_intervention/museosans_300-webfont.eot'));
+    src: url(font-path('payday_loans_intervention/museosans_300-webfont.eot') + '?#iefix') format('embedded-opentype');
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'museo_sans';
+    src: url(font-path('payday_loans_intervention/museosans_300-webfont.eot'));
+    src: url(font-path('payday_loans_intervention/museosans_300-webfont.eot') + '?#iefix') format('embedded-opentype');
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'museo_sans';
+    src: url(font-path('payday_loans_intervention/museosans_700-webfont.woff'));
+    src: url(font-path('payday_loans_intervention/museosans_700-webfont.woff') + '?#iefix' ) format('embedded-opentype');
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'icon-font';
+    src: url(font-path('payday_loans_intervention/icon-font.eot'));
+    src: url(font-path('payday_loans_intervention/icon-font.eot') + '?#iefix' ) format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+}

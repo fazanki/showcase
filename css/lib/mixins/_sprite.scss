@@ -1,0 +1,3 @@
+@mixin sprite($x, $y, $asset) {
+  background: image-url($asset) $x*-50px $y*-50px no-repeat;
+}

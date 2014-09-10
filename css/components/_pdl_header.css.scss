@@ -1,0 +1,57 @@
+.pdl-header {
+  background :image-url("payday_loans_intervention/header_background_02.png") right 0 no-repeat $color-green-mas;
+  position:relative;
+  text-align: right;
+  @extend %clearfix;
+  padding:15px 1.5%;
+}
+
+.pdl-header--large {
+  background: image-url("payday_loans_intervention/landingpage_background_green.png") right 0 no-repeat $color-green-mas-dark;
+}
+
+.pdl-header__logo {
+  float:left;
+
+  img {
+    height: 34px;
+  }
+}
+
+.pdl-header__ask-ma {
+  margin-top: 5px;
+  display: none;
+  vertical-align: middle;
+  width: 83px;
+  @include respond-to($mq-s) {
+    display: inline-block;
+  }
+}
+
+.pdl-header__tag-line {
+  display: inline-block;
+  color: $color-white;
+  margin: 0 10px;
+  @extend %text-small;
+  display: none;
+  @include respond-to(px-to-em(885)) {
+    display: inline-block;
+  }
+}
+
+.pdl-header__language-switch {
+  display: inline-block;
+  margin: 15px 0 14px 0; // keeps the header size consistent when the ask ma logo disappears
+  a {
+    color: $color-white;
+  }
+  @extend %text-small;
+
+  &:before {
+    @include respond-to($mq-s) {
+      content: '|';
+      color: $color-white;
+      padding: 0 10px 0 5px;
+    }
+  }
+}

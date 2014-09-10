@@ -1,0 +1,28 @@
+//h2
+%heading-medium {
+  @extend %font-heading-heavy;
+  @include typography(heading, 24);
+  color: $color-green-secondary;
+
+  @include respond-to($mq-m) {
+    @include typography(heading, 30);
+  }
+}
+
+//h3
+%heading-small {
+  @extend %font-heading-heavy;
+  @include typography(heading, 20);
+  color: $color-green-secondary;
+
+  @include respond-to($mq-m) {
+    @include typography(heading, 22);
+  }
+}
+
+//h4
+%heading-extra-small {
+  @extend %font-heading-heavy;
+  @include typography(heading, 16);
+  color: $color-text-default;
+}

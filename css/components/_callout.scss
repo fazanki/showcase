@@ -1,0 +1,25 @@
+.callout {
+  float: right;
+  width: 220px;
+  padding: 20px 20px 30px 20px;
+  margin: 1.78571rem -10px 20px 30px;
+
+  border-radius: 10px;
+
+  @extend %text-medium;
+  background-color: #ebf4b9;
+
+  h2, p {
+    color: #3e8406;
+    margin-bottom: 0;
+    color: $color-green-tertiary;
+  }
+  h2 {
+    margin: 0 0 10px 0;
+  }
+
+  display: none;
+  @include respond-to($mq-s) {
+    display: block;
+  }
+}
