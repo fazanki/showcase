@@ -1,0 +1,61 @@
+<div class='grid' role="grid" aria-readonly="true">
+    <h1>Grid</h1>
+
+    <form name='editContact' novalidate class=''>
+        <fieldset>
+            <legend class="visually-hidden">search</legend>
+            <div class='search'>
+                <label for="search" class="visually-hidden">Search</label>
+                <input id='search' type='search' class='search__input form-control' ng-model='query' placeholder='Search' tabindex="1" />
+            </div>
+
+            <table class='grid-table table table-hover table-bordered' role="presentation">
+                <thead>
+                    <tr role="row">
+                        <th ng-repeat='field in fields' class='grid-table_th' role="columnheader">
+                            <p class='visually-hidden'>will sort table content by {{field | labelCase}}</p>
+                            <button class='btn grid-table__heading-button' ng-click='sort(field)' tabindex="2">{{ field | labelCase }}</button>
+                            <span ng-show='sort.field === field && !sort.order' class='grid-table_span glyphicon glyphicon-chevron-down'></span>
+                            <span ng-show='sort.field === field && sort.order' class='grid-table_span glyphicon glyphicon-chevron-up'></span>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                <tr tabindex='3' ng-click="onRowClick()" ng-focus='focused()' ng-blur='blured()' dir-paginate='(key, value) in services | filter:query | orderBy: sort.field : sort.order | itemsPerPage: 4 ' role="row">
+
+                    <td ng-repeat='field in fields' ng-switch='field' class='grid-table_td' role="gridcell" tabindex="4">
+
+                        <div ng-switch-default >
+                         <p class='gird_table_p'>  {{ value[field] }} </p>
+                            <button tabindex='4' focusablePopover fieldtype="textinput" class="grid-table_icon glyphicon glyphicon-pencil" fieldname="{{ value[field] }}" popover savename='save' style="float:right"> <span class="visually-hidden">edit - opens in popup</span> </button>
+                        </div>
+
+                        <div ng-switch-when='listSelectItems'>
+                            {{selectedListItems[key].selected}}
+                            <button fieldtype="select" class="grid-table_icon glyphicon glyphicon-pencil" fieldname="{{ value[field] }}" popover savename='save'> <span class="visually-hidden">edit opens in popup</span> </button>
+                        </div>
+
+                        <div ng-switch-when='listEditItems'>
+                            <button fieldtype="editList" listitems='{{value[field]}}' class=" grid-table_icon glyphicon glyphicon-th-list" fieldname="{{ value[field] }}" popover savename='save' style="float:right"><span class="visually-hidden">edit opens in popup</span> </button>
+                        </div>
+
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <div class='pull-right'>
+                <div dir-pagination-controls boundary-links="true" on-page-change="pageChangeHandler(newPageNumber)" template-url="shared/pagination/dirPagination.tpl.html"></div>
+            </div>
+
+            <div class="form-group right">
+                <div class="form-group-left">
+                    <button type="reset" class="btn btn-default btn-disabled">Add</button>
+                    <button type="submit" class="btn btn-primary btn-disabled" ng-disabled="isDisabled">Edit</button>
+                </div>
+            </div>
+        </fieldset>
+</form>
+</div>
+
+

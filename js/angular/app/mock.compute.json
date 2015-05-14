@@ -1,0 +1,132 @@
+[
+    {
+        "lastUpdated": 1422963902925,
+        "transactionalLastUpdated": 1422963902925,
+        "lastUpdatedBy": "G01886171",
+        "state": "ACTIVE",
+        "businessITServiceId": 5271,
+        "businessITServiceName": "APPLICATION 3",
+        "cmdbServiceName": "APPLICATION 3",
+        "description": null,
+        "correlationId": "APPL014347",
+        "maxBoundaryCount": -1,
+        "bitAdminGroups": [
+            {
+                "lastUpdated": 1422963903552,
+                "transactionalLastUpdated": 1422963903552,
+                "lastUpdatedBy": "G01886171",
+                "state": "ACTIVE",
+                "bitAdminGroupId": 4327,
+                "domain": "INTRANET",
+                "adGroupName": "fLDNwebengineering"
+            }
+        ],
+        "boundaryCount": null,
+        "businessOperationalBoundarys": [],
+        "boundarySecuritySpheres": []
+    },
+    {
+        "lastUpdated": 1422546860877,
+        "transactionalLastUpdated": 1422546860877,
+        "lastUpdatedBy": "G01886171",
+        "state": "ACTIVE",
+        "businessITServiceId": 3610,
+        "businessITServiceName": "APPLICATION 4",
+        "cmdbServiceName": "APPLICATION 4",
+        "description": null,
+        "correlationId": "APPL014348",
+        "maxBoundaryCount": -1,
+        "bitAdminGroups": [
+            {
+                "lastUpdated": 1422546862814,
+                "transactionalLastUpdated": 1422546862814,
+                "lastUpdatedBy": "G01886171",
+                "state": "ACTIVE",
+                "bitAdminGroupId": 2648,
+                "domain": "INTRANET",
+                "adGroupName": "fLDNwebengineering"
+            }
+        ],
+        "boundaryCount": null,
+        "businessOperationalBoundarys": [],
+        "boundarySecuritySpheres": []
+    },
+    {
+        "lastUpdated": 1422378754728,
+        "transactionalLastUpdated": 1422378754728,
+        "lastUpdatedBy": "G47424345",
+        "state": "ACTIVE",
+        "businessITServiceId": 1457,
+        "businessITServiceName": "BUILD AS A SERVICE (BAAS)",
+        "cmdbServiceName": "BUILD AS A SERVICE (BAAS)",
+        "description": null,
+        "correlationId": "APPL011069",
+        "maxBoundaryCount": -1,
+        "bitAdminGroups": [
+            {
+                "lastUpdated": 1422378756974,
+                "transactionalLastUpdated": 1422378756974,
+                "lastUpdatedBy": "G47424345",
+                "state": "ACTIVE",
+                "bitAdminGroupId": 470,
+                "domain": "INTRANET",
+                "adGroupName": "fGLBbcloudbsstest1"
+            }
+        ],
+        "boundaryCount": null,
+        "businessOperationalBoundarys": [],
+        "boundarySecuritySpheres": []
+    },
+    {
+        "lastUpdated": 1422364671240,
+        "transactionalLastUpdated": 1422364671240,
+        "lastUpdatedBy": "InitialLoad",
+        "state": "ACTIVE",
+        "businessITServiceId": 2,
+        "businessITServiceName": "Provisioning Test Service 2",
+        "cmdbServiceName": "Provisioning Test Service 2",
+        "description": "Provisioning IT Test Service 2 Description",
+        "correlationId": null,
+        "maxBoundaryCount": -1,
+        "bitAdminGroups": [
+            {
+                "lastUpdated": 1422364677387,
+                "transactionalLastUpdated": 1422364677387,
+                "lastUpdatedBy": "release1.1",
+                "state": "ACTIVE",
+                "bitAdminGroupId": 2,
+                "domain": "INTRANET",
+                "adGroupName": "fGLBbcloudbsstest2"
+            }
+        ],
+        "boundaryCount": null,
+        "businessOperationalBoundarys": [],
+        "boundarySecuritySpheres": []
+    },
+    {
+        "lastUpdated": 1422364671258,
+        "transactionalLastUpdated": 1422364671258,
+        "lastUpdatedBy": "InitialLoad",
+        "state": "ACTIVE",
+        "businessITServiceId": 3,
+        "businessITServiceName": "Test Service 3",
+        "cmdbServiceName": "Test Service 3",
+        "description": "IT Test Service 3 Description",
+        "correlationId": null,
+        "maxBoundaryCount": -1,
+        "bitAdminGroups": [
+            {
+                "lastUpdated": 1422364677387,
+                "transactionalLastUpdated": 1422364677387,
+                "lastUpdatedBy": "release1.1",
+                "state": "ACTIVE",
+                "bitAdminGroupId": 3,
+                "domain": "INTRANET",
+                "adGroupName": "fGLBbcloudbsstest3"
+            }
+        ],
+        "boundaryCount": null,
+        "businessOperationalBoundarys": [],
+        "boundarySecuritySpheres": []
+    }
+]

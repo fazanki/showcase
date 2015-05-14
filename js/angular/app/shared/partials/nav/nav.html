@@ -1,0 +1,13 @@
+<div class="navbar navbar-default ">
+  <ul class="nav navbar-nav">
+    <li ng-repeat="menus in navItems" class="dropdown"  ng-if="menus.parentId == 0" >
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{menus.menuName}} <span class="caret" ng-show='menus.children.length !=0'></span></a>
+      <ul class="dropdown-menu" ng-if="menus.children.length !=0 ">
+        <li ng-repeat="submenu in menus.children" ng-class="{dropdown: submenu.menus}">
+          <a href="{{submenu.ulr}}"  data-toggle="dropdown">{{submenu.menuName}}</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+

@@ -1,0 +1,571 @@
+[
+    {
+        "lastUpdated": 1422364679048,
+        "transactionalLastUpdated": 1422364679048,
+        "lastUpdatedBy": "InitialLoad",
+        "state": "ACTIVE",
+        "ossLocationId": 2,
+        "ossName": "ETF Lab London - IaaS Piscataway Simulation",
+        "operationalService": {
+            "lastUpdated": 1422364649869,
+            "transactionalLastUpdated": 1422364649869,
+            "lastUpdatedBy": "InitialLoad",
+            "state": "ACTIVE",
+            "operationalServiceId": 1,
+            "operationalService": "Compute",
+            "adminGroup": "fGLBbcloudbsstest3",
+            "opServiceCode": "COMPUTE",
+            "domain": {
+                "lastUpdated": null,
+                "transactionalLastUpdated": null,
+                "lastUpdatedBy": null,
+                "state": "ACTIVE",
+                "id": 1,
+                "name": "INTRANET"
+            },
+            "mandatoryOBN": false
+        },
+
+        "region" : "amber",
+        "territory" : "us esast",
+        "datacenter" : "Piscataway",
+        "businessScopes" : "InvestmentBanking",
+        "realm" : "Campus/CIPE",
+        "listSelectItems" : [{"name":"list one"},{"name":"list two"},{"name":"list three"},{"name":"list four"},{"name":"list five"}],
+        "listEditItems": [{"name":"lorem ispum lorem ispum lorem"},{"name":"list two"},{"name":"list three"},{"name":"list four"},{"name":"list five"}],
+
+
+         "location": {
+            "lastUpdated": 1423043257992,
+            "transactionalLastUpdated": 1423043257992,
+            "lastUpdatedBy": "G48805407",
+            "state": "ACTIVE",
+            "locationId": 511,
+            "locationName": "Piscataway",
+            "locationCode": null,
+            "snlocid": "LOC0000274",
+            "parentId": 504,
+            "locationGranularityId": 3,
+            "locationGranularity": "AZ",
+            "parent": {
+                "locationId": 504,
+                "locationName": "US East",
+                "locationCode": "us",
+                "locationLevel": 0,
+                "parent": {
+                    "locationId": 501,
+                    "locationName": "AMER",
+                    "locationCode": "amer",
+                    "locationLevel": 0,
+                    "parent": null,
+                    "children": null
+                },
+                "children": null
+            },
+            "locationAttributes": []
+        },
+
+        "status":  "Online",
+
+        "ossLocationPrices": null,
+        "ossLocationAttributes": null,
+        "environment": null,
+        "message": "DEV OpenStack http://10.123.2.1:5000"
+    },
+    {
+        "lastUpdated": 1422547262995,
+        "transactionalLastUpdated": 1422547262995,
+        "lastUpdatedBy": "G01886171",
+        "state": "ACTIVE",
+        "ossLocationId": 4,
+        "ossName": "ETF Lab London - IaaS Crash-n-Burn",
+        "operationalService": {
+            "lastUpdated": 1422364649869,
+            "transactionalLastUpdated": 1422364649869,
+            "lastUpdatedBy": "InitialLoad",
+            "state": "ACTIVE",
+            "operationalServiceId": 1,
+            "operationalService": "Compute",
+            "adminGroup": "fGLBbcloudbsstest3",
+            "opServiceCode": "COMPUTE",
+            "domain": {
+                "lastUpdated": null,
+                "transactionalLastUpdated": null,
+                "lastUpdatedBy": null,
+                "state": "ACTIVE",
+                "id": 1,
+                "name": "INTRANET"
+            },
+            "mandatoryOBN": false
+        },
+
+        "region" : "amber",
+        "territory" : "us ",
+        "datacenter" : "London ETF",
+        "businessScopes" : "InvestmentBanking",
+        "realm" : "Campus/CIPE",
+        "listSelectItems" : [{"name":"list one"},{"name":"list two"},{"name":"list three"},{"name":"list four"},{"name":"list five"}],
+        "listEditItems": [{"name":"lorem ispum lorem ispum lorem"},{"name":"list two"},{"name":"list three"},{"name":"list four"},{"name":"list five"}],
+
+        "location": {
+            "lastUpdated": 1423043257993,
+            "transactionalLastUpdated": 1423043257993,
+            "lastUpdatedBy": "G48805407",
+            "state": "ACTIVE",
+            "locationId": 515,
+            "locationName": "London ETF",
+            "locationCode": null,
+            "snlocid": "LOC0000262",
+            "parentId": 505,
+            "locationGranularityId": 3,
+            "locationGranularity": "AZ",
+            "parent": {
+                "locationId": 505,
+                "locationName": "UK",
+                "locationCode": "uk",
+                "locationLevel": 0,
+                "parent": {
+                    "locationId": 502,
+                    "locationName": "EMEA",
+                    "locationCode": "emea",
+                    "locationLevel": 0,
+                    "parent": null,
+                    "children": null
+                },
+                "children": null
+            },
+            "locationAttributes": []
+        },
+        "status": "Online",
+
+        "ossLocationPrices": null,
+        "ossLocationAttributes": null,
+        "environment": null,
+        "message": "Crash-n-Burn OpenStack http://10.123.112.2:5000"
+    },
+    {
+        "lastUpdated": 1422547212665,
+        "transactionalLastUpdated": 1422547212665,
+        "lastUpdatedBy": "G01886171",
+        "state": "ACTIVE",
+        "ossLocationId": 3,
+        "ossName": "ETF Lab London - IaaS Dry-run",
+        "operationalService": {
+            "lastUpdated": 1422364649869,
+            "transactionalLastUpdated": 1422364649869,
+            "lastUpdatedBy": "InitialLoad",
+            "state": "ACTIVE",
+            "operationalServiceId": 1,
+            "operationalService": "Compute",
+            "adminGroup": "fGLBbcloudbsstest3",
+            "opServiceCode": "COMPUTE",
+            "domain": {
+                "lastUpdated": null,
+                "transactionalLastUpdated": null,
+                "lastUpdatedBy": null,
+                "state": "ACTIVE",
+                "id": 1,
+                "name": "INTRANET"
+            },
+            "mandatoryOBN": false
+        },
+
+
+        "region" : "amber",
+        "territory" : "us ",
+        "datacenter" : "London ETF",
+        "businessScopes" : "InvestmentBanking",
+        "realm" : "Campus/CIPE",
+        "listSelectItems" : [{"name":"list one"},{"name":"list one"},{"name":"list one"},{"name":"list one"},{"name":"list one"}],
+        "listEditItems": [{"name":"lorem ispum lorem ispum lorem"},{"name":"list two"},{"name":"list three"},{"name":"list four"},{"name":"list five"}],
+
+        "location": {
+            "lastUpdated": 1423043257993,
+            "transactionalLastUpdated": 1423043257993,
+            "lastUpdatedBy": "G48805407",
+            "state": "ACTIVE",
+            "locationId": 515,
+            "locationName": "London ETF",
+            "locationCode": null,
+            "snlocid": "LOC0000262",
+            "parentId": 505,
+            "locationGranularityId": 3,
+            "locationGranularity": "AZ",
+            "parent": {
+                "locationId": 505,
+                "locationName": "UK",
+                "locationCode": "uk",
+                "locationLevel": 0,
+                "parent": {
+                    "locationId": 502,
+                    "locationName": "EMEA",
+                    "locationCode": "emea",
+                    "locationLevel": 0,
+                    "parent": null,
+                    "children": null
+                },
+                "children": null
+            },
+            "locationAttributes": []
+        },
+        "status":  "Offline",
+        "ossLocationPrices": null,
+        "ossLocationAttributes": null,
+        "environment": null,
+        "message": "Dry-run OpenStack http://10.123.2.1:5000"
+    },
+    {
+        "lastUpdated": 1422547212665,
+        "transactionalLastUpdated": 1422547212665,
+        "lastUpdatedBy": "G01886171",
+        "state": "ACTIVE",
+        "ossLocationId": 3,
+        "ossName": "Test Name",
+        "operationalService": {
+            "lastUpdated": 1422364649869,
+            "transactionalLastUpdated": 1422364649869,
+            "lastUpdatedBy": "InitialLoad",
+            "state": "ACTIVE",
+            "operationalServiceId": 1,
+            "operationalService": "Compute",
+            "adminGroup": "fGLBbcloudbsstest3",
+            "opServiceCode": "COMPUTE",
+            "domain": {
+                "lastUpdated": null,
+                "transactionalLastUpdated": null,
+                "lastUpdatedBy": null,
+                "state": "ACTIVE",
+                "id": 1,
+                "name": "INTRANET"
+            },
+            "mandatoryOBN": false
+        },
+
+
+        "region" : "a region",
+        "territory" : "Europe",
+        "datacenter" : "London Canary Wharf",
+        "businessScopes" : "unknown",
+        "realm" : "Campus/London",
+        "listSelectItems" : [{"name":"list one"},{"name":"list one"},{"name":"list one"},{"name":"list one"},{"name":"list one"}],
+        "listEditItems": [{"name":"llorem ispum lorem ispum lorem"},{"name":"list two"},{"name":"list three"},{"name":"list four"},{"name":"list five"}],
+
+        "location": {
+            "lastUpdated": 1423043257993,
+            "transactionalLastUpdated": 1423043257993,
+            "lastUpdatedBy": "G48805407",
+            "state": "ACTIVE",
+            "locationId": 515,
+            "locationName": "London ETF",
+            "locationCode": null,
+            "snlocid": "LOC0000262",
+            "parentId": 505,
+            "locationGranularityId": 3,
+            "locationGranularity": "AZ",
+            "parent": {
+                "locationId": 505,
+                "locationName": "UK",
+                "locationCode": "uk",
+                "locationLevel": 0,
+                "parent": {
+                    "locationId": 502,
+                    "locationName": "EMEA",
+                    "locationCode": "emea",
+                    "locationLevel": 0,
+                    "parent": null,
+                    "children": null
+                },
+                "children": null
+            },
+            "locationAttributes": []
+        },
+        "status":  "Offline",
+        "ossLocationPrices": null,
+        "ossLocationAttributes": null,
+        "environment": null,
+        "message": "Dry-run OpenStack http://10.123.2.1:5000"
+    },
+      {
+        "lastUpdated": 1422547212665,
+        "transactionalLastUpdated": 1422547212665,
+        "lastUpdatedBy": "G01886171",
+        "state": "ACTIVE",
+        "ossLocationId": 3,
+        "ossName": "Test Name",
+        "operationalService": {
+            "lastUpdated": 1422364649869,
+            "transactionalLastUpdated": 1422364649869,
+            "lastUpdatedBy": "InitialLoad",
+            "state": "ACTIVE",
+            "operationalServiceId": 1,
+            "operationalService": "Compute",
+            "adminGroup": "fGLBbcloudbsstest3",
+            "opServiceCode": "COMPUTE",
+            "domain": {
+                "lastUpdated": null,
+                "transactionalLastUpdated": null,
+                "lastUpdatedBy": null,
+                "state": "ACTIVE",
+                "id": 1,
+                "name": "INTRANET"
+            },
+            "mandatoryOBN": false
+        },
+
+
+        "region" : "a region",
+        "territory" : "Europe",
+        "datacenter" : "London Canary Wharf",
+        "businessScopes" : "unknown",
+        "realm" : "Campus/London",
+        "listSelectItems" : [{"name":"list one"},{"name":"list one"},{"name":"list one"},{"name":"list one"},{"name":"list one"}],
+        "listEditItems": [{"name":"llorem ispum lorem ispum lorem"},{"name":"list two"},{"name":"list three"},{"name":"list four"},{"name":"list five"}],
+
+        "location": {
+            "lastUpdated": 1423043257993,
+            "transactionalLastUpdated": 1423043257993,
+            "lastUpdatedBy": "G48805407",
+            "state": "ACTIVE",
+            "locationId": 515,
+            "locationName": "London ETF",
+            "locationCode": null,
+            "snlocid": "LOC0000262",
+            "parentId": 505,
+            "locationGranularityId": 3,
+            "locationGranularity": "AZ",
+            "parent": {
+                "locationId": 505,
+                "locationName": "UK",
+                "locationCode": "uk",
+                "locationLevel": 0,
+                "parent": {
+                    "locationId": 502,
+                    "locationName": "EMEA",
+                    "locationCode": "emea",
+                    "locationLevel": 0,
+                    "parent": null,
+                    "children": null
+                },
+                "children": null
+            },
+            "locationAttributes": []
+        },
+        "status":  "Offline",
+        "ossLocationPrices": null,
+        "ossLocationAttributes": null,
+        "environment": null,
+        "message": "Dry-run OpenStack http://10.123.2.1:5000"
+    },
+      {
+        "lastUpdated": 1422547212665,
+        "transactionalLastUpdated": 1422547212665,
+        "lastUpdatedBy": "G01886171",
+        "state": "ACTIVE",
+        "ossLocationId": 3,
+        "ossName": "Test Name",
+        "operationalService": {
+            "lastUpdated": 1422364649869,
+            "transactionalLastUpdated": 1422364649869,
+            "lastUpdatedBy": "InitialLoad",
+            "state": "ACTIVE",
+            "operationalServiceId": 1,
+            "operationalService": "Compute",
+            "adminGroup": "fGLBbcloudbsstest3",
+            "opServiceCode": "COMPUTE",
+            "domain": {
+                "lastUpdated": null,
+                "transactionalLastUpdated": null,
+                "lastUpdatedBy": null,
+                "state": "ACTIVE",
+                "id": 1,
+                "name": "INTRANET"
+            },
+            "mandatoryOBN": false
+        },
+
+
+        "region" : "a region",
+        "territory" : "Europe",
+        "datacenter" : "London Canary Wharf",
+        "businessScopes" : "unknown",
+        "realm" : "Campus/London",
+        "listSelectItems" : [{"name":"list one"},{"name":"list one"},{"name":"list one"},{"name":"list one"},{"name":"list one"}],
+        "listEditItems": [{"name":"llorem ispum lorem ispum lorem"},{"name":"list two"},{"name":"list three"},{"name":"list four"},{"name":"list five"}],
+
+        "location": {
+            "lastUpdated": 1423043257993,
+            "transactionalLastUpdated": 1423043257993,
+            "lastUpdatedBy": "G48805407",
+            "state": "ACTIVE",
+            "locationId": 515,
+            "locationName": "London ETF",
+            "locationCode": null,
+            "snlocid": "LOC0000262",
+            "parentId": 505,
+            "locationGranularityId": 3,
+            "locationGranularity": "AZ",
+            "parent": {
+                "locationId": 505,
+                "locationName": "UK",
+                "locationCode": "uk",
+                "locationLevel": 0,
+                "parent": {
+                    "locationId": 502,
+                    "locationName": "EMEA",
+                    "locationCode": "emea",
+                    "locationLevel": 0,
+                    "parent": null,
+                    "children": null
+                },
+                "children": null
+            },
+            "locationAttributes": []
+        },
+        "status":  "Offline",
+        "ossLocationPrices": null,
+        "ossLocationAttributes": null,
+        "environment": null,
+        "message": "Dry-run OpenStack http://10.123.2.1:5000"
+    },  {
+        "lastUpdated": 1422547212665,
+        "transactionalLastUpdated": 1422547212665,
+        "lastUpdatedBy": "G01886171",
+        "state": "ACTIVE",
+        "ossLocationId": 3,
+        "ossName": "Test Name",
+        "operationalService": {
+            "lastUpdated": 1422364649869,
+            "transactionalLastUpdated": 1422364649869,
+            "lastUpdatedBy": "InitialLoad",
+            "state": "ACTIVE",
+            "operationalServiceId": 1,
+            "operationalService": "Compute",
+            "adminGroup": "fGLBbcloudbsstest3",
+            "opServiceCode": "COMPUTE",
+            "domain": {
+                "lastUpdated": null,
+                "transactionalLastUpdated": null,
+                "lastUpdatedBy": null,
+                "state": "ACTIVE",
+                "id": 1,
+                "name": "INTRANET"
+            },
+            "mandatoryOBN": false
+        },
+
+
+        "region" : "a region",
+        "territory" : "Europe",
+        "datacenter" : "London Canary Wharf",
+        "businessScopes" : "unknown",
+        "realm" : "Campus/London",
+        "listSelectItems" : [{"name":"list one"},{"name":"list one"},{"name":"list one"},{"name":"list one"},{"name":"list one"}],
+        "listEditItems": [{"name":"llorem ispum lorem ispum lorem"},{"name":"list two"},{"name":"list three"},{"name":"list four"},{"name":"list five"}],
+
+        "location": {
+            "lastUpdated": 1423043257993,
+            "transactionalLastUpdated": 1423043257993,
+            "lastUpdatedBy": "G48805407",
+            "state": "ACTIVE",
+            "locationId": 515,
+            "locationName": "London ETF",
+            "locationCode": null,
+            "snlocid": "LOC0000262",
+            "parentId": 505,
+            "locationGranularityId": 3,
+            "locationGranularity": "AZ",
+            "parent": {
+                "locationId": 505,
+                "locationName": "UK",
+                "locationCode": "uk",
+                "locationLevel": 0,
+                "parent": {
+                    "locationId": 502,
+                    "locationName": "EMEA",
+                    "locationCode": "emea",
+                    "locationLevel": 0,
+                    "parent": null,
+                    "children": null
+                },
+                "children": null
+            },
+            "locationAttributes": []
+        },
+        "status":  "Offline",
+        "ossLocationPrices": null,
+        "ossLocationAttributes": null,
+        "environment": null,
+        "message": "Dry-run OpenStack http://10.123.2.1:5000"
+    },
+      {
+        "lastUpdated": 1422547212665,
+        "transactionalLastUpdated": 1422547212665,
+        "lastUpdatedBy": "G01886171",
+        "state": "ACTIVE",
+        "ossLocationId": 3,
+        "ossName": "Test Name",
+        "operationalService": {
+            "lastUpdated": 1422364649869,
+            "transactionalLastUpdated": 1422364649869,
+            "lastUpdatedBy": "InitialLoad",
+            "state": "ACTIVE",
+            "operationalServiceId": 1,
+            "operationalService": "Compute",
+            "adminGroup": "fGLBbcloudbsstest3",
+            "opServiceCode": "COMPUTE",
+            "domain": {
+                "lastUpdated": null,
+                "transactionalLastUpdated": null,
+                "lastUpdatedBy": null,
+                "state": "ACTIVE",
+                "id": 1,
+                "name": "INTRANET"
+            },
+            "mandatoryOBN": false
+        },
+
+
+        "region" : "a region",
+        "territory" : "Europe",
+        "datacenter" : "London Canary Wharf",
+        "businessScopes" : "unknown",
+        "realm" : "Campus/London",
+        "listSelectItems" : [{"name":"list one"},{"name":"list one"},{"name":"list one"},{"name":"list one"},{"name":"list one"}],
+        "listEditItems": [{"name":"llorem ispum lorem ispum lorem"},{"name":"list two"},{"name":"list three"},{"name":"list four"},{"name":"list five"}],
+
+        "location": {
+            "lastUpdated": 1423043257993,
+            "transactionalLastUpdated": 1423043257993,
+            "lastUpdatedBy": "G48805407",
+            "state": "ACTIVE",
+            "locationId": 515,
+            "locationName": "London ETF",
+            "locationCode": null,
+            "snlocid": "LOC0000262",
+            "parentId": 505,
+            "locationGranularityId": 3,
+            "locationGranularity": "AZ",
+            "parent": {
+                "locationId": 505,
+                "locationName": "UK",
+                "locationCode": "uk",
+                "locationLevel": 0,
+                "parent": {
+                    "locationId": 502,
+                    "locationName": "EMEA",
+                    "locationCode": "emea",
+                    "locationLevel": 0,
+                    "parent": null,
+                    "children": null
+                },
+                "children": null
+            },
+            "locationAttributes": []
+        },
+        "status":  "Offline",
+        "ossLocationPrices": null,
+        "ossLocationAttributes": null,
+        "environment": null,
+        "message": "Dry-run OpenStack http://10.123.2.1:5000"
+    }
+]
